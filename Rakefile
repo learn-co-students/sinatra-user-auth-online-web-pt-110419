@@ -4,5 +4,6 @@ require 'sinatra/activerecord/rake'
 
 desc 'Pry console yo!'
 task :console do
+  require_rel './app/models/user.rb'
   Pry.start
 end
